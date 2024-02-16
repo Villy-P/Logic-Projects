@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chess</title>
+    <link rel="stylesheet" href="src/CSS/style.css">
+</head>
+<body>
+    <!--https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar-->
+    <ul id="header">
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Colors</a>
+            <div class="dropdown-content">
+                <a href="#"><input type="color" value="#FFFFFF" id="colorWell1"> White Square</a>
+                <a href="#"><input type="color" value="#006400" id="colorWell2"> Black Square</a>
+                <a href="#"><input type="color" value="#5f9ea0" id="colorWell3"> Canvas Background</a>
+                <a href="#"><input type="color" value="#25383C" id="colorWell4"> Background Color</a>
+                <a href="#"><input type="color" value="#38444d" id="colorWell5"> Header Color</a>
+                <a href="#"><input type="color" value="#FFFFFF" id="colorWell6"> History Canvas Background</a>
+            </div>
+        </li>
+    </ul>
+
+    <canvas id="historyCanvas"></canvas>
+
+    <canvas id="mainCanvas"></canvas>
+
+    <script src="src/Style/colorInput.js"></script>
+    <script src="src/Style/history.js"></script>
+    <script src="src/Style/historyComponent.js"></script>
+    <script src="src/main.js"></script>
+    <script src="src/Board Utilities/fenHandling.js"></script>
+    <script src="src/Functions/functions.js"></script>
+    <script src="src/Board Utilities/board.js"></script>
+    <script src="src/Pieces/piece.js"></script>
+    <script src="src/Events/keyEvents.js"></script>
+    <script src="src/Pieces/black.js"></script>
+    <script src="src/Move Validation/move.js"></script>
+    <script src="src/Move Validation/check.js"></script>
+    <script src="src/Settings/userSettings.js"></script>
+    <script src="src/Settings/devSettings.js"></script>
+    <script src="src/init.js"></script>
+</body>
+</html>
