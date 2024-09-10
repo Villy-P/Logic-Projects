@@ -5,7 +5,7 @@
 
 char* getStringInput(char* prompt) {
     printf("%s", prompt);
-    char* str;
+    char* str = NULL;
     scanf("%s", str);
     printf("\n");
     return str;
