@@ -37,6 +37,8 @@ void broke(struct Player** mainPlayer, struct Node **computerHead) {
         exit(0);
     }
     struct Node *last = *computerHead;
+    if (last == NULL)
+        return;
     while (last->next != NULL) {
         if (!hasChips(&(*last->player))) {
             printf("%s%s has gone broke!%s\n", ANSI_RED, last->player->name, ANSI_RESET);
