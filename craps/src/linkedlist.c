@@ -18,7 +18,8 @@ void addToLinkedList(struct Node **head, struct Node *node) {
 }
 
 void deleteFromLinkedList(struct Node **head, struct Node *node) {
-    struct Node *temp = *head, *prev;
+    struct Node *temp = *head;
+    struct Node *prev = NULL;
     if (temp != NULL && strcmp(temp->player->name, node->player->name) == 0) {
         *head = temp->next;
         free(temp);
@@ -28,7 +29,7 @@ void deleteFromLinkedList(struct Node **head, struct Node *node) {
         prev = temp;
         temp = temp->next;
     }
-    if (temp == NULL)
+    if (temp == NULL || prev == NULL)
         return;
     prev->next = temp->next;
     free(temp);
