@@ -1,2 +1,0 @@
-make:
-	python startup.py
