@@ -26,7 +26,7 @@ plot::Plot& board::Board::getPlot(int index) {
 }
 
 void board::Board::createPlots() {
-    std::ifstream plotData("plotData.txt");
+    std::ifstream plotData("data/plotData.txt");
     plot::Plot plot({}, {}, {});
     if (plotData.is_open()) {
         while (plotData.good()) {

@@ -17,7 +17,7 @@ void card_managment::CardManagment::shuffleDecks() {
 }
 
 void card_managment::CardManagment::createCards() {
-    std::ifstream cardData("cardData.txt");
+    std::ifstream cardData("data/cardData.txt");
     card::Card card(true, "", {}, {});
     if (cardData.is_open()) {
         while (cardData.good()) {
